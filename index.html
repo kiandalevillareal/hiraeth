@@ -19,62 +19,77 @@
         <img src="images/hiraethLogo.png" alt="" />
       </div>
       <ul>
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#shop">Shop</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#shop" class="nav-link">Shop</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
         <li>
-          <a href="#cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="#cart" class="nav-link"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
         </li>
       </ul>
     </section>
 
-    <!--LANDING PAGE-->
-    <section class="landing">
-      <div class="banner">
-        <h4>Be in style</h4>
-        <h2>Great deals</h2>
-        <h3>On all products</h3>
-        <p>Save more with coupons & other discounts!</p>
-        <button class="shopNow">Shop Now!</button>
-      </div>
-    </section>
+    <div id="home" class="content">
+      <!--LANDING PAGE-->
+      <section class="landing">
+        <div class="banner">
+          <h4>Be in style</h4>
+          <h2>Great deals</h2>
+          <h3>On all products</h3>
+          <p>Save more with coupons & other discounts!</p>
+          <button class="shopNow">Shop Now!</button>
+        </div>
+      </section>
 
-    <!--MODEL GALLERY-->
+      <!--MODEL GALLERY-->
+      <h1 class="title">GALLERY</h1>
+      <section id="gallery">
+        <div class="galleryContainer">
+          <img src="images/fit3.jpeg" alt="" />
+          <h2>Shirt Collection</h2>
+        </div>
+        <div class="galleryContainer">
+          <img src="images/fit2.jpeg" alt="" />
+          <h2>Icy Fraud Blue</h2>
+        </div>
+        <div class="galleryContainer">
+          <img src="images/fit4.jpeg" alt="" />
+          <h2>Icy Fraud Black</h2>
+        </div>
+        <div class="galleryContainer">
+          <img src="images/fit5.jpeg" alt="" />
+          <h2>Icy Fraud White</h2>
+        </div>
 
-    <h1 class="title">GALLERY</h1>
-    <section id="gallery">
-      <div class="galleryContainer">
-        <img src="images/fit3.jpeg" alt="" />
-        <h2>Shirt Collection</h2>
-      </div>
-      <div class="galleryContainer">
-        <img src="images/fit2.jpeg" alt="" />
-        <h2>Icy Fraud Blue</h2>
-      </div>
-      <div class="galleryContainer">
-        <img src="images/fit4.jpeg" alt="" />
-        <h2>Icy Fraud Black</h2>
-      </div>
-      <div class="galleryContainer">
-        <img src="images/fit5.jpeg" alt="" />
-        <h2>Icy Fraud White</h2>
-      </div>
+        <div class="popup-image">
+          <i class="fa-regular fa-circle-xmark close"></i>
+          <img src="images/fit3.jpeg" alt="" />
+        </div>
+      </section>
 
-      <div class="popup-image">
-        <i class="fa-regular fa-circle-xmark close"></i>
-        <img src="images/fit3.jpeg" alt="" />
-      </div>
-    </section>
+      <!--SERVICES OFFERED-->
+      <section class="service">
+        <div class="service-content">
+          <h4>Let's customize its fitting!</h4>
+          <h2>Repair and Customization Services</h2>
+          <button>Explore More</button>
+        </div>
+      </section>
+    </div>
 
-    <!--SERVICES OFFERED-->
-    <section class="service">
-      <div class="content">
-        <h4>Let's customize its fitting!</h4>
-        <h2>Repair and Customization Services</h2>
-        <button>Explore More</button>
-      </div>
-    </section>
+    <div id="shop" class="content">
+      <h1>Shop</h1>
+    </div>
+
+    <div id="about" class="content">
+      <h1>About</h1>
+    </div>
+
+    <div id="contact" class="content">
+      <h1>Contact</h1>
+    </div>
 
     <!--FOOTER AND NEWSLETTER-->
     <section class="footer">
@@ -120,6 +135,7 @@
         </div>
       </div>
     </section>
+
     <script src="index.js"></script>
   </body>
 </html>
