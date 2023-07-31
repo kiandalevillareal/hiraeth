@@ -1,33 +1,43 @@
-// TO OPEN AND CLOSE THE IMAGES IN THE GALLERY SECTION
-document.querySelectorAll("#gallery img").forEach(galleryContainer =>{
-    galleryContainer.onclick = () =>{
-        document.querySelector(".popup-image").style.display = "block";
-        document.querySelector(".popup-image img").src = galleryContainer.getAttribute('src');
-    }
-});
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // FOR THE NAV BAR
+    const navLinks = document.querySelectorAll('.nav-link');
+    const contentSections = document.querySelectorAll('.content-section');
 
-let popupImage = document.querySelector(".popup-image i");
+    const onClickNavLinks = (event) => {
+        event.preventDefault(); 
 
-popupImage.addEventListener("click", function(){
-    document.querySelector(".popup-image").style.display = "none";
-});
+        contentSections.forEach((section) => {
+            section.style.display = 'none';
+        });
 
-const navLinks = document.querySelectorAll('.nav-link');
-const contentSections = document.querySelectorAll('.content');
+        navLinks.forEach((link) => {
+            link.style.backgroundColor = 'white ';
+        });
 
-function handleNavLinkClick(e) {
-    e.preventDefault();
+        const targetSectionId = event.target.getAttribute('href');
+        const targetSection = document.querySelector(targetSectionId);
+        if (targetSection) {
+            targetSection.style.display = 'block';
+            event.target.style.backgroundColor = '#aed6d3';
+            }
+    };
 
-    contentSections.forEach((section) => {
-        section.style.display = 'none';
+    navLinks.forEach((link) => {
+        link.addEventListener('click', onClickNavLinks);
     });
 
-    const targetId = this.getAttribute('href').substring(1);
-    const targetSection = document.getElementById(targetId);
-    targetSection.style.display = 'block';
-    targetSection.classList.add('active');
-}
+    // FOR THE IMAGES
+    const images = document.querySelectorAll('.gallery img');
+    images.forEach(e => {
+        e.onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = e.getAttribute('src');
+        }
+    })
 
-navLinks.forEach((link) => {
-    link.addEventListener('click', handleNavLinkClick);
+    const popupImage = document.querySelector(".popup-image .fa-circle-xmark");
+    popupImage.addEventListener("click", function(){
+        document.querySelector(".popup-image").style.display = "none";
+    });
 });

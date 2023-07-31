@@ -16,6 +16,14 @@ body, button, input{
     font-family: 'Poppins', sans-serif;
 }
 
+#home{
+    display: block;
+}
+
+#shop, #about, #contact{
+    display: none;
+}
+
 /*NAVIGATION BAR - HEADER*/
 .navbar{
     display: flex;
@@ -30,51 +38,41 @@ body, button, input{
     z-index: 99;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
-    .navbar .logo{
-        width: 100%;
-        padding-left: 1rem;
-        display: flex;
-        align-items: center;
-    }
-        .navbar .logo img{
-            width: 2.5rem;
-            height: 2.5rem;
-        }
-        .navbar .logo p{
-            font-size: 1.5rem;
-            font-family: 'Arial', sans-serif;
-            color: #0a2438;
-            margin-left: .5rem;
-        }
-    .navbar ul{
-        display: flex;
-        align-items: center;
-    }  
-        .navbar ul li{
-            margin: 0 1rem;
-            list-style: none;
-            position: relative;
-        }   
-            .navbar ul li a{
-                text-decoration: none;
-                font-weight: 600px;
-                color: #0a2438;
-                transition: 0.2s ease;
-            }
-                .navbar ul li a:hover,
-                .navbar ul li a.active{
-                    color: #02457A;
-                }
-                    .navbar ul li a:hover::after,
-                    .navbar ul li a.active::after{
-                        content: "";
-                        width: 70%;
-                        height: 3px;
-                        bottom: -3px;
-                        left: 15%;
-                        background-color: #02457A;
-                        position: absolute;
-                    }
+.navbar .logo{
+    width: 100%;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+.navbar .logo img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.navbar .logo p{
+    font-size: 1.5rem;
+    font-family: 'Arial', sans-serif;
+    color: #0a2438;
+    margin-left: .5rem;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+}  
+.navbar ul li{
+    margin: 0 1rem;
+    list-style: none;
+    position: relative;
+}   
+.navbar ul li a{
+    text-decoration: none;
+    font-weight: 600px;
+    color: #0a2438;
+    transition: 0.2s ease;
+}
+ .navbar ul li a:hover,
+    .navbar ul li a.active{
+    color: #02457A;
+}
 
 /*HOME PAGE*/
 
@@ -90,101 +88,101 @@ body, button, input{
     justify-content: center;
     padding: 0 5rem;
 }
-    .landing h4{
-        font-size: 1.5rem;
-        color: #aed6d3;
-        margin-bottom: -1.5rem;
-        line-height: 4rem;
-    }
-    .landing h2{
-        font-size: 3rem;
-        color: #fff;
-        margin-bottom: -1.5rem;
-        line-height: 4rem;
-    }
-    .landing h3{
-        font-size: 2rem;
-        color: #fff;
-        margin-bottom: 1.5rem;
-        line-height: 4rem;
-    }
-    .landing p{
-        font-weight: 600;
-        color: #fff;
-        margin-bottom: 1.5rem;
-        line-height: 4rem;
-    }
-    .landing button{
-        color: #fff;
-        background-color: #0a2438;
-        border: none;
-        width: 6rem;
-        height: 2rem;
-        border-radius: 50px;
-        font-size: .8rem;
-        font-weight: 600;
-        border-bottom: 2px solid #aed6d3;
-        cursor: pointer;
-    }
-        .landing button:hover{
-            color: #0a2438;
-            background-color: #fff;
-            border-bottom: 2px solid #0a2438;
-            transition: ease-in-out .3s;
-        }
+.landing h4{
+    font-size: 1.5rem;
+    color: #aed6d3;
+    margin-bottom: -1.5rem;
+    line-height: 4rem;
+}
+.landing h2{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: -1.5rem;
+    line-height: 4rem;
+}
+.landing h3{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    line-height: 4rem;
+}
+.landing p{
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    line-height: 4rem;
+}
+.landing button{
+    color: #fff;
+    background-color: #0a2438;
+    border: none;
+    width: 8rem;
+    height: 2rem;
+    border-radius: .2rem;
+    font-size: .8rem;
+    font-weight: 600;
+    border-bottom: 2px solid #aed6d3;
+    cursor: pointer;
+}
+.landing button:hover{
+    color: #0a2438;
+    background-color: #fff;
+    border-bottom: 2px solid #0a2438;
+    transition: ease-in-out .3s;
+}
 
 /* MODEL GALLERY*/
 .title{
     font-size: 2.5rem;
     margin: .5rem 2rem;
 }
-#gallery{
+.gallery{
     display: flex;
     justify-content: center;
     align-items: center;
 }   
-    .galleryContainer{
-        width: 12rem;
-        padding: .5rem 0;
-        margin: 0 .5rem;
-        text-align: center;
-        border-radius: 20px;
-        cursor: pointer;
-        box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
-    }
-        #gallery .galleryContainer img{
-            width: 10rem;
-            margin-bottom: .5rem;
-            border-radius: 20px;
-        }
-        #gallery .galleryContainer h2{
-            font-size: 1rem;
-            color: #000;
-        }
-        #gallery .popup-image{
-            top: 0;
-            left: 0;
-            position: fixed;
-            height: 100%;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            z-index: 100;
-            display: none;
-        }
-        #gallery .popup-image .close{
-            color: #fff;
-            float: right;
-            padding: 2rem 10rem;
-            cursor: pointer;
-        }
-        #gallery .popup-image img{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 400px;
-            object-fit: cover;
-        }
+.gallery .galleryContainer{
+    width: 12rem;
+    padding: .5rem 0;
+    margin: 0 .5rem;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+}
+.gallery .galleryContainer img{
+    width: 10rem;
+    margin-bottom: .5rem;
+    border-radius: 20px;
+}
+.gallery .galleryContainer h2{
+    font-size: 1rem;
+    color: #000;
+}
+.gallery .popup-image{
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    display: none;
+}
+.gallery .popup-image .close{
+    color: #fff;
+    float: right;
+    padding: 2rem 10rem;
+    cursor: pointer;
+}
+.gallery .popup-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    object-fit: cover;
+}
 
 /*SERVICES OFFERED*/ 
 .service{
@@ -194,35 +192,35 @@ body, button, input{
     margin: 3rem 0;
     padding: 2rem 4rem;
 }
-    .service .service-content h4{
-        color: #aed6d3;
-        font-size: 1.5rem;
-        margin-bottom: -.5rem;
-    }
-    .service .service-content h2{
-        color: white;
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        line-height: 1.5rem;
-    }
-    .service button{
-        color: #fff;
-        background-color: #0a2438;
-        border: none;
-        width: 8rem;
-        height: 2rem;
-        border-radius: 50px;
-        font-size: .8rem;
-        font-weight: 600;
-        border-bottom: 2px solid #aed6d3;
-        cursor: pointer;
-    }
-        .service button:hover{
-            color: #0a2438;
-            background-color: #fff;
-            border-bottom: 2px solid #0a2438;
-            transition: ease-in-out .3s;
-        }
+.service .service-content h4{
+    color: #aed6d3;
+    font-size: 1.5rem;
+    margin-bottom: -.5rem;
+}
+.service .service-content h2{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+.service button{
+    color: #fff;
+    background-color: #0a2438;
+    border: none;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 50px;
+    font-size: .8rem;
+    font-weight: 600;
+    border-bottom: 2px solid #aed6d3;
+    cursor: pointer;
+}
+.service button:hover{
+    color: #0a2438;
+    background-color: #fff;
+    border-bottom: 2px solid #0a2438;
+    transition: ease-in-out .3s;
+}
 
 /*FOOTER AND NEWSLETTER*/
 .footer{
@@ -235,20 +233,20 @@ body, button, input{
     color: #0a2438;
     margin: 2rem 1rem;
 }
-    .footer .header{
-        font-size: 1rem;
-    }
-        .footer .header span{
-            font-weight: 700;
-        }
-        .footer .header p{
-            font-size: .7rem;
-            margin: .3rem 0;
-        }
-        .footer .header .icon i{
-            font-size: 1.8rem;
-            margin: .5rem .8rem 0 0;
-        }
+.footer .header{
+    font-size: 1rem;
+}
+.footer .header span{
+    font-weight: 700;
+}
+.footer .header p{
+    font-size: .7rem;
+    margin: .3rem 0;
+}
+.footer .header .icon i{
+    font-size: 1.8rem;
+    margin: .5rem .8rem 0 0;
+}
 
 @media (max-width: 1000px){
     html{
@@ -259,12 +257,12 @@ body, button, input{
         padding: 0 5rem;
     }
     /* MODEL GALLERY*/
-        #gallery .galleryContainer{
-            width: 14rem;
-        }
-            #gallery .galleryContainer img{
-                width: 10rem;
-            }
+    .gallery .galleryContainer{
+        width: 14rem;
+    }
+    .gallery .galleryContainer img{
+        width: 10rem;
+    }
 }
 
 @media (max-width: 800px){
@@ -276,12 +274,12 @@ body, button, input{
         padding: 0 5rem;
     }
     /* MODEL GALLERY*/
-        #gallery .galleryContainer{
-            width: 7rem;
-        }
-            #gallery .galleryContainer img{
-                width: 6rem;
-            }
+    .gallery .galleryContainer{
+        width: 7rem;
+    }
+    .gallery .galleryContainer img{
+        width: 6rem;
+    }
 }
 
 @media (max-width: 500px){
@@ -296,12 +294,12 @@ body, button, input{
         padding: 0 2rem;
     }
     /* MODEL GALLERY*/
-        #gallery .galleryContainer{
-            width: 8rem;
-        }
-            #gallery .galleryContainer img{
-                width: 5rem;
-            }
+    .gallery .galleryContainer{
+        width: 8rem;
+    }
+    .gallery .galleryContainer img{
+        width: 5rem;
+    }
 }
 
 @media (max-width: 400px){
@@ -316,15 +314,15 @@ body, button, input{
         padding: 0 2rem;
     }
     /* MODEL GALLERY*/
-        #gallery{
-            margin: 0 .8rem;
-        }
-        #gallery .galleryContainer{
-            width: 8rem;
-        }
-            #gallery .galleryContainer img{
-                width: 5rem;
-            }
+    .gallery{
+        margin: 0 .8rem;
+    }
+    .gallery .galleryContainer{
+        width: 8rem;
+    }
+    .gallery .galleryContainer img{
+        width: 5rem;
+    }
     .footer{
         padding: .5rem .5rem;
         color: #0a2438;
@@ -333,20 +331,16 @@ body, button, input{
     .footer .header{
         font-size: .7rem;
     }
-        .footer .header span{
-            font-weight: 700;
-            line-height: .8rem;
-        }
-        .footer .header p{
-            font-size: .5rem;
-            margin: .3rem 0;
-        }
-        .footer .header .icon i{
-            font-size: 1rem;
-            margin: .5rem .8rem 0 0;
-        }
+    .footer .header span{
+        font-weight: 700;
+        line-height: .8rem;
+    }
+    .footer .header p{
+        font-size: .5rem;
+        margin: .3rem 0;
+    }
+    .footer .header .icon i{
+        font-size: 1rem;
+        margin: .5rem .8rem 0 0;
+    }
 }
-
-/*SHOP PAGE*/
-
-
