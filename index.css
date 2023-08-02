@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html{
@@ -14,14 +15,6 @@ html{
 
 body, button, input{
     font-family: 'Poppins', sans-serif;
-}
-
-#home{
-    display: block;
-}
-
-#shop, #about, #contact{
-    display: none;
 }
 
 /*NAVIGATION BAR - HEADER*/
@@ -34,7 +27,6 @@ body, button, input{
     font-weight: 600;
     color: #0a2438;
     top: 0;
-    position: sticky;
     z-index: 99;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
@@ -65,11 +57,12 @@ body, button, input{
 }   
 .navbar ul li a{
     text-decoration: none;
+    font-size: .8rem;
     font-weight: 600px;
     color: #0a2438;
     transition: 0.2s ease;
 }
- .navbar ul li a:hover,
+.navbar ul li a:hover,
     .navbar ul li a.active{
     color: #02457A;
 }
@@ -195,7 +188,6 @@ body, button, input{
 .service .service-content h4{
     color: #aed6d3;
     font-size: 1.5rem;
-    margin-bottom: -.5rem;
 }
 .service .service-content h2{
     color: white;
