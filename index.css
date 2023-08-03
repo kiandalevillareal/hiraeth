@@ -12,6 +12,10 @@
 html{
     font-size: 20px;
 }
+/* 
+body{
+    background-color: #0a2438;
+} */
 
 body, button, input{
     font-family: 'Poppins', sans-serif;
@@ -51,7 +55,7 @@ body, button, input{
     align-items: center;
 }  
 .navbar ul li{
-    margin: 0 1rem;
+    margin: 0 1.4rem;
     list-style: none;
     position: relative;
 }   
@@ -60,11 +64,9 @@ body, button, input{
     font-size: .8rem;
     font-weight: 600px;
     color: #0a2438;
-    transition: 0.2s ease;
 }
-.navbar ul li a:hover,
-    .navbar ul li a.active{
-    color: #02457A;
+.navbar ul li a:hover{
+    color: #aed6d3;
 }
 
 /*HOME PAGE*/
@@ -105,19 +107,18 @@ body, button, input{
     margin-bottom: 1.5rem;
     line-height: 4rem;
 }
-.landing button{
+.landing .shopNow{
     color: #fff;
     background-color: #0a2438;
-    border: none;
-    width: 8rem;
-    height: 2rem;
+    padding: .5rem 1rem;
+    text-decoration: none;
     border-radius: .2rem;
     font-size: .8rem;
     font-weight: 600;
     border-bottom: 2px solid #aed6d3;
     cursor: pointer;
 }
-.landing button:hover{
+.landing .shopNow:hover{
     color: #0a2438;
     background-color: #fff;
     border-bottom: 2px solid #0a2438;
@@ -128,9 +129,12 @@ body, button, input{
 .title{
     font-size: 2.5rem;
     margin: .5rem 2rem;
+    color: #0a2438;
 }
 .gallery{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
 }   
@@ -139,14 +143,18 @@ body, button, input{
     padding: .5rem 0;
     margin: 0 .5rem;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 1rem;
     cursor: pointer;
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+}
+.gallery .galleryContainer:hover{
+    background-color: #d3d3d3;
+    transition: ease-in-out .1s;
 }
 .gallery .galleryContainer img{
     width: 10rem;
     margin-bottom: .5rem;
-    border-radius: 20px;
+    border-radius: 1rem;
 }
 .gallery .galleryContainer h2{
     font-size: 1rem;
