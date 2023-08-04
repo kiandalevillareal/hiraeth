@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const images = document.querySelectorAll('.gallery img');
+    const images = document.querySelectorAll('img');
     images.forEach(e => {
         e.onclick = () =>{
             document.querySelector('.popup-image').style.display = 'block';

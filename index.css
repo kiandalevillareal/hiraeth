@@ -77,7 +77,7 @@ body, button, input{
     width: 100%;
     height: 90vh;
     background-size: cover;
-    background-position: 90% 40%;
+    background-position: 90% 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,15 +128,16 @@ body, button, input{
 /* MODEL GALLERY*/
 .title{
     font-size: 2.5rem;
-    margin: .5rem 2rem;
+    margin: .5rem 2rem 0;
     color: #0a2438;
 }
 .gallery{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, auto);
     gap: 2rem;
     justify-content: center;
     align-items: center;
+    margin: 5rem 0;
 }   
 .gallery .galleryContainer{
     width: 12rem;
@@ -148,7 +149,7 @@ body, button, input{
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
 }
 .gallery .galleryContainer:hover{
-    background-color: #d3d3d3;
+    background-color: #eeeeee;
     transition: ease-in-out .1s;
 }
 .gallery .galleryContainer img{
@@ -158,7 +159,7 @@ body, button, input{
 }
 .gallery .galleryContainer h2{
     font-size: 1rem;
-    color: #000;
+    color: #0a2438;
 }
 .gallery .popup-image{
     top: 0;
@@ -183,6 +184,40 @@ body, button, input{
     transform: translate(-50%, -50%);
     width: 400px;
     object-fit: cover;
+}
+
+.item-gallery{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #aed6d3;
+    padding: 2rem 0;
+    margin: 0 2rem;
+    border-radius: 1rem;
+}   
+.item-gallery .itemContainer{
+    width: 8rem;
+    padding: .5rem 0;
+    text-align: center;
+    border-radius: .5rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+.item-gallery .itemContainer:hover{
+    background-color: #eeeeee;
+    transition: ease-in-out .1s;
+}
+.item-gallery .itemContainer img{
+    width: 6rem;
+    margin-bottom: .5rem;
+    border-radius: 1rem;
+}
+.item-gallery .itemContainer h2{
+    font-size: .8rem;
+    color: #0a2438;
 }
 
 /*SERVICES OFFERED*/ 
@@ -224,28 +259,41 @@ body, button, input{
 
 /*FOOTER AND NEWSLETTER*/
 .footer{
-    background-color: #fff;
-    border: 4px solid #0a2438;
+    display: flex;
+    flex-direction: column;
+    background-color: #0a2438;
+    padding: 1rem 2rem;
+    color: #e0e0e0;
+}
+
+.footer-details{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 1rem 2rem;
-    color: #0a2438;
-    margin: 2rem 1rem;
 }
-.footer .header{
+.footer-details .header{
     font-size: 1rem;
 }
-.footer .header span{
-    font-weight: 700;
+.footer-details .header span{
+    font-weight: 500;
 }
-.footer .header p{
+.footer-details .header p{
     font-size: .7rem;
     margin: .3rem 0;
 }
-.footer .header .icon i{
-    font-size: 1.8rem;
+.footer-details .header .icon i{
+    font-size: 1.3rem;
     margin: .5rem .8rem 0 0;
+}
+.footer .vline{
+    border-bottom: 2px solid #eeeeee;
+    width: 100%;
+    margin: .6rem auto 0;
+}
+.footer .copyright{
+    font-size: .7rem;
+    text-align: center;
+    margin-top: .6rem;
 }
 
 @media (max-width: 1000px){
