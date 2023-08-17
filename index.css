@@ -12,10 +12,10 @@
 html{
     font-size: 20px;
 }
-/* 
+
 body{
-    background-color: #0a2438;
-} */
+    background-color: #fafafa;
+}
 
 body, button, input{
     font-family: 'Poppins', sans-serif;
@@ -26,13 +26,15 @@ body, button, input{
     display: flex;
     justify-content: space-between;
     padding: .3rem;
-    background-color: #fff;
+    background-color: #fafafa;
     font-size: .70rem;
     font-weight: 600;
     color: #0a2438;
     top: 0;
     z-index: 99;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    width: 100%;
 }
 .navbar .logo{
     width: 100%;
@@ -53,6 +55,7 @@ body, button, input{
 .navbar ul{
     display: flex;
     align-items: center;
+    margin-right: 1rem;
 }  
 .navbar ul li{
     margin: 0 1.4rem;
@@ -75,9 +78,9 @@ body, button, input{
 .landing{
     background: url("images/bg.jpeg");
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-size: cover;
-    background-position: 90% 50%;
+    background-position: 100% 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,24 +94,24 @@ body, button, input{
 }
 .landing h2{
     font-size: 3rem;
-    color: #fff;
+    color: #fafafa;
     margin-bottom: -1.5rem;
     line-height: 4rem;
 }
 .landing h3{
     font-size: 2rem;
-    color: #fff;
+    color: #fafafa;
     margin-bottom: 1.5rem;
     line-height: 4rem;
 }
 .landing p{
     font-weight: 600;
-    color: #fff;
+    color: #fafafa;
     margin-bottom: 1.5rem;
     line-height: 4rem;
 }
 .landing .shopNow{
-    color: #fff;
+    color: #fafafa;
     background-color: #0a2438;
     padding: .5rem 1rem;
     text-decoration: none;
@@ -120,7 +123,7 @@ body, button, input{
 }
 .landing .shopNow:hover{
     color: #0a2438;
-    background-color: #fff;
+    background-color: #fafafa;
     border-bottom: 2px solid #0a2438;
     transition: ease-in-out .3s;
 }
@@ -137,7 +140,7 @@ body, button, input{
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    margin: 5rem 0;
+    margin: 3rem 0;
 }   
 .gallery .galleryContainer{
     width: 12rem;
@@ -172,7 +175,7 @@ body, button, input{
     display: none;
 }
 .gallery .popup-image .close{
-    color: #fff;
+    color: #fafafa;
     float: right;
     padding: 2rem 10rem;
     cursor: pointer;
@@ -186,7 +189,43 @@ body, button, input{
     object-fit: cover;
 }
 
-.item-gallery{
+
+#96B6C5
+#ADC4CE
+#EEE0C9
+#F1F0E8
+
+
+/* SHOP */
+.shop{
+    background: radial-gradient(circle, #0a2438, #aed6d3);
+    padding: 3rem 0;
+}
+.shop h1{
+    color: #0a2438;
+    text-align: center;
+}
+.shop .item-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    margin: 0 2rem;
+    border-radius: .5rem;
+}
+.shop .item-gallery .itemContainer img{
+    width: 6rem;
+    margin-bottom: .5rem;
+    border-radius: 1rem;
+}
+.shop .item-gallery .itemContainer h2{
+    font-size: .8rem;
+    color: #0a2438;
+}
+
+/* .item-gallery{
     display: grid;
     grid-template-columns: repeat(5, auto);
     gap: 2rem;
@@ -195,7 +234,7 @@ body, button, input{
     background-color: #aed6d3;
     padding: 2rem 0;
     margin: 0 2rem;
-    border-radius: 1rem;
+    border-radius: .5rem;
 }   
 .item-gallery .itemContainer{
     width: 8rem;
@@ -204,7 +243,7 @@ body, button, input{
     border-radius: .5rem;
     cursor: pointer;
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
-    background-color: #fff;
+    background-color: #fafafa;
 }
 .item-gallery .itemContainer:hover{
     background-color: #eeeeee;
@@ -218,7 +257,7 @@ body, button, input{
 .item-gallery .itemContainer h2{
     font-size: .8rem;
     color: #0a2438;
-}
+} */
 
 /*SERVICES OFFERED*/ 
 .service{
@@ -239,7 +278,7 @@ body, button, input{
     line-height: 1.5rem;
 }
 .service button{
-    color: #fff;
+    color: #fafafa;
     background-color: #0a2438;
     border: none;
     width: 8rem;
@@ -252,7 +291,7 @@ body, button, input{
 }
 .service button:hover{
     color: #0a2438;
-    background-color: #fff;
+    background-color: #fafafa;
     border-bottom: 2px solid #0a2438;
     transition: ease-in-out .3s;
 }
@@ -261,9 +300,9 @@ body, button, input{
 .footer{
     display: flex;
     flex-direction: column;
-    background-color: #0a2438;
+    background-color: #96B6C5;
     padding: 1rem 2rem;
-    color: #e0e0e0;
+    color: #0a2438;
 }
 
 .footer-details{
