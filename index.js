@@ -11,4 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
     popupImage.addEventListener("click", function(){
         document.querySelector(".popup-image").style.display = "none";
     });
+
+    // const itemContainers = document.querySelectorAll('.itemContainer');
+
+    // itemContainers.forEach(itemContainer => {
+    //     itemContainer.addEventListener('mouseenter', () => {
+    //         itemContainer.style.backgroundColor = 'red';
+    //     });
+
+    //     itemContainer.addEventListener('mouseleave', () => {
+    //         itemContainer.style.backgroundColor = ''; // Reset to default
+    //     });
+    // });
 });
