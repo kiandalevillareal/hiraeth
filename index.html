@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link rel="icon" href="images/hiraethLogo.png" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Hiraeth</title>
   </head>
   <body>
@@ -27,7 +27,7 @@
       </ul>
     </nav>
 
-    <section class="home">
+    <section id="home" class="home">
       <!--LANDING PAGE-->
       <section class="landing">
         <div class="banner">
@@ -65,7 +65,7 @@
       </section>
     </section>
 
-    <section class="shop">
+    <section id="shop" class="shop">
       <h1>Hiraeth Urban Elegance</h1>
       <div class="item-gallery">
         <div class="itemContainer">
@@ -215,7 +215,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
       <div class="aboutUs">
         <h1>About Us</h1>
         <p>
@@ -231,26 +231,31 @@
       <img src="./images/bg5.jpeg" alt="" srcset="" />
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="contactForm">
         <h1>Send us a message</h1>
-        <div class="userInput">
-          <label for="name">Name</label>
-          <input type="text" placeholder="Juan dela Cruz" />
-        </div>
-        <div class="userInput">
-          <label for="name">Email</label>
-          <input type="email" placeholder="juandc@gmail.com" />
-        </div>
-        <div class="userInput">
-          <label for="name">Contact Number</label>
-          <input type="number" placeholder="(+63) 912 3456 789" />
-        </div>
-        <div class="userInput">
-          <label for="name">Message</label>
-          <input type="text" placeholder="Your message here ..." />
-        </div>
-        <button class="send">Send</button>
+        <form id="contactForm" action="contact.php" method="post">
+          <div class="userInput">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Juan dela Cruz" />
+          </div>
+          <div class="userInput">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="juandc@gmail.com" />
+          </div>
+          <div class="userInput">
+            <label for="contact">Contact Number</label>
+            <input type="tel" name="contact" placeholder="(+63) 912 3456 789" />
+          </div>
+          <div class="userInput">
+            <label for="message">Message</label>
+            <input type="text"
+              name="message"
+              placeholder="Your message here ..."
+            ></input>
+          </div>
+          <button class="send" type="submit">Send</button>
+        </form>
       </div>
     </section>
 
