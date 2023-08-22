@@ -296,28 +296,29 @@ body, button, input{
 .contact{
     padding: 3rem;
 }
-.contact .contactForm{
+.contact .contactForm h1{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #0a2438;
+}
+.contact #contactForm{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
-.contact .contactForm h1{
-    font-size: 2.5rem;
-    color: #0a2438;
-}
-.contact .contactForm .userInput{
+.contact #contactForm .userInput{
     display: flex;
     flex-direction: column;
     width: 50%;
 }
-.contact .contactForm .userInput input{
+.contact #contactForm .userInput input{
     border: 1px solid rgba(128, 128, 128, .5);
     padding: .8rem 1rem;
     border-radius: .3rem;
     font-size: 1rem;
 }
-.contact .contactForm .send{
+.contact #contactForm .send{
     background-color: #0a2438;
     color: #fafafa;
     padding: .8rem 1rem;
@@ -426,10 +427,10 @@ body, button, input{
     }
 
     /* CONTACT */
-    .contact .contactForm .userInput{
+    .contact #contactForm .userInput{
         width: 60%;
     }
-    .contact .contactForm .send{
+    .contact #contactForm .send{
         width: 60%;
     }
     
@@ -539,16 +540,16 @@ body, button, input{
     .contact .contactForm h1{
         font-size: 2rem;
     }
-    .contact .contactForm .userInput{
+    .contact #contactForm .userInput{
         width: 70%;
     }
-    .contact .contactForm .userInput label{
+    .contact #contactForm .userInput label{
         font-size: .8rem;
     }
-    .contact .contactForm .userInput input{
+    .contact #contactForm .userInput input{
         font-size: .8rem;
     }
-    .contact .contactForm .send{
+    .contact #contactForm .send{
         width: 70%;
         font-size: .8rem;
     }
